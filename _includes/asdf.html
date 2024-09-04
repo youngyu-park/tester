@@ -1,0 +1,10 @@
+<nav class="nav">
+    <div class="nav-center">
+        {% for asdf in site.data.asdf %}
+        <a class="brand" href="{{ asdf.url }}" target="_blank" aria-label="{{ asdf.name }}" {% if
+            social.name == "mastodon" %}rel="me" {% endif %}>
+            <span class="iconify-inline" data-icon="{{ asdf.icon }}" style="color: {{ asdf.color }}"></span>
+        </a>
+        {% endfor %}
+    </div>
+</nav>
